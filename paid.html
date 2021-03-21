@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="" />
+
+<link rel="mask-icon" type="" href="" color="#111" />
+
+
+  <title>Flight Managemant System</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap4.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body translate="no" >
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="create.html">
+            <i class="fa fa-fw fa-plane"></i>
+            <span class="nav-link-text">Create Flight Record</span>
+          </a>
+        </li>
+       
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-credit-card-alt"></i>
+            <span class="nav-link-text">Credit Record</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="paid.html">Paid</a>
+            </li>
+            <li>
+              <a href="unpaid.html">Unpaid</a>
+            </li>
+          </ul>
+        </li>
+       
+      </ul>
+      
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">My Dashboard</li>
+      </ol>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i>Paid Records</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                  <th>Amount</th>
+                  <th>Paid/Unpaid</th>
+                  <th>Actoin</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Amount</th>
+                    <th>Paid/Unpaid</th>
+                    <th>Actoin</th>
+                  </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>Richard Nixon</td>
+                  <td>9840015777</td>
+                  <td>R@gmail.com</td>
+                  <td>6100000</td>
+                  <td><button type="button" class="btn btn-sm btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                    <div class="handle"></div>
+                  </button></td>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;">
+                        <span class="fa fa-fw fa-pencil" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-xs dt-delete">
+                        <span class="fa fa-fw fa-trash" aria-hidden="true"></span>
+                    </button>
+                </td>  
+                </tr>
+                  <tr>
+                    <td>Rajesh Haile</td>
+                    <td>24234234</td>
+                    <td>R@gmail.com</td>
+                    <td>6123232323</td>
+                    <td><button type="button" class="btn btn-sm btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                        <div class="handle"></div>
+                      </button></td>
+                    <td>
+                      <button type="button" class="btn btn-primary btn-xs dt-edit" style="margin-right:16px;">
+                          <span class="fa fa-fw fa-pencil" aria-hidden="true"></span>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-xs dt-delete">
+                          <span class="fa fa-fw fa-trash" aria-hidden="true"></span>
+                      </button>
+                  </td>  
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted"></div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © 2020</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js'></script>
+<script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script>
+      <script id="rendered-js" >
+// Chart.js scripts
+// -- Set new default font family and font color to mimic Bootstrap's default styling
+Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+Chart.defaults.global.defaultFontColor = '#292b2c';
+
+$(document).ready(function() {
+  $('#dataTable').DataTable();
+});
+
+(function($) {
+  "use strict"; // Start of use strict
+  // Configure tooltips for collapsed side navigation
+  $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
+    template: '<div class="tooltip navbar-sidenav-tooltip" role="tooltip" style="pointer-events: none;"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+  })
+  // Toggle the side navigation
+  $("#sidenavToggler").click(function(e) {
+    e.preventDefault();
+    $("body").toggleClass("sidenav-toggled");
+    $(".navbar-sidenav .nav-link-collapse").addClass("collapsed");
+    $(".navbar-sidenav .sidenav-second-level, .navbar-sidenav .sidenav-third-level").removeClass("show");
+  });
+  // Force the toggled class to be removed when a collapsible nav link is clicked
+  $(".navbar-sidenav .nav-link-collapse").click(function(e) {
+    e.preventDefault();
+    $("body").removeClass("sidenav-toggled");
+  });
+  // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
+  $('body.fixed-nav .navbar-sidenav, body.fixed-nav .sidenav-toggler, body.fixed-nav .navbar-collapse').on('mousewheel DOMMouseScroll', function(e) {
+    var e0 = e.originalEvent,
+      delta = e0.wheelDelta || -e0.detail;
+    this.scrollTop += (delta < 0 ? 1 : -1) * 30;
+    e.preventDefault();
+  });
+  // Scroll to top button appear
+  $(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+      $('.scroll-to-top').fadeIn();
+    } else {
+      $('.scroll-to-top').fadeOut();
+    }
+  });
+  // Configure tooltips globally
+  $('[data-toggle="tooltip"]').tooltip()
+  // Smooth scrolling using jQuery easing
+  $(document).on('click', 'a.scroll-to-top', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: ($($anchor.attr('href')).offset().top)
+    }, 1000, 'easeInOutExpo');
+    event.preventDefault();
+  });
+})(jQuery); // End of use strict
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
